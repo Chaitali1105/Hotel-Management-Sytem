@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+</head>
+
+<body>
+    
+    <img src="p1.png" style="width:1000px; height:700px" name="changebanner"/>
+        
+    <script>
+    
+    mybanner=new Array("p1.png","p2.png","p3.png","p4.png") 
+    banner=0
+    
+    myvar=setInterval(showbanner, 3000)
+    
+    function showbanner()
+    
+    {
+    
+    if(document.images)
+    
+    {
+    
+    banner++
+    
+    }
+    
+    if(banner==mybanner.length)
+    
+    {
+    
+    banner=0
+    
+    }
+    
+    document.changebanner.src=mybanner[banner]
+    
+    }
+    
+    </script> 
+</body>
+</html>
